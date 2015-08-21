@@ -32,13 +32,17 @@ meteor add chroma:reactive-summernote
 
 ## Usage
 
+## Summernote
+
+### with images embedded as base64
+
 ```bash
 <Template name="myTemplate">
   {{>summernote collection='MyCollection' field='myField' _id=_id}}
 </Template>
 ```
 
-OR to enable CFS images
+### using meteor CFS
 
 ```bash
 <Template name="myTemplate">
@@ -46,14 +50,36 @@ OR to enable CFS images
 </Template>
 ```
 
-OR to enable CFS images with S3 support
+### using CFS with S3 direct url support
 
 ```bash
-<Template name="myTemplate">
   {{>summernote collection='MyCollection' field='myField' _id=_id imageCollection='attachedImages' s3bucket:'my-site-image-bucket'}}
-</Template>
 ```
 
+jade, with s3 bucket subfolder specified
+
+```bash
++summernote(collection='copyMarkup' field='markup' imageCollection='attachedImages' s3Bucket=s3Bucket s3subFolder='offering' _id=doc._id)
+```
+
+## Options
+
+```bash
+{{>summernote options=???}}
+```
+options is a json object passed to $summernote(options) see
+
+see http://summernote.org/#/getting-started
+```
+{
+  height: 300,                 // set editor height
+
+  minHeight: null,             // set minimum height of editor
+  maxHeight: null,             // set maximum height of editor
+
+  focus: true,                 // set focus to editable area after initializing summernote
+}
+```
 ## Version history
 
 - `0.0.1` - Initial publish.
