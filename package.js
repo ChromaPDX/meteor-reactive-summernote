@@ -14,15 +14,22 @@ Package.onUse(function(api) {
   api.versionsFrom('1.1.0.3');
 
   api.use([
-    "chroma:summernote",
-    "coffeescript",
-    "templating"
+    "templating",
+    "underscore",
+    "chroma:summernote"
   ], "client");
 
   api.addFiles([
-    "lib/reactive-summernote.js",
-    "reactive-summernote.html"
+    "reactive-summernote.html",
+    "lib/reactive-summernote.js"
   ], "client");
+
+  api.addFiles([
+    "lib/publish.js"
+  ], "server");
+
+  api.export('Summernote', 'client');
+
 });
 
 
