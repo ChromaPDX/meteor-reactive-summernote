@@ -1,6 +1,6 @@
 Package.describe({
   name: 'chroma:reactive-summernote',
-  version: '0.0.5',
+  version: '0.0.6',
   summary: 'provides a reactive template for the summernote editor, with support for cfs including s3',
   git: 'https://github.com/ChromaPDX/meteor-reactive-summernote.git',
   documentation: 'README.md'

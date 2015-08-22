@@ -1,16 +1,8 @@
 # chroma:reactive-summernote
 
-summernote is here:
-
-https://github.com/summernote/summernote
-
-this template is based on greenewolf's solution here:
-
-https://github.com/summernote/summernote/issues/1064
-
 ## Example
 
-http://meteorpad.com/pad/v4HnDcwAarAxrAQtn/chroma:summernote
+http://meteorpad.com/pad/GBhGLv9SLJu4dgg4p/reactive-summernote
 
 ## Installation
 
@@ -31,8 +23,6 @@ meteor add chroma:reactive-summernote
 ```
 
 ## Usage
-
-## Summernote
 
 ### with images embedded as base64
 
@@ -84,6 +74,14 @@ see http://summernote.org/#/getting-started
 
 - `0.0.5` - Test available on meteor pad.
 - `0.0.1` - Initial publish.
+
+## Notes
+
+the summernote project is here:
+https://github.com/summernote/summernote
+
+this package uses code based on greenewolf's reactive summernote solution here:
+https://github.com/summernote/summernote/issues/1064
 
 ## Contributing
 
