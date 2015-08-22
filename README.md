@@ -82,6 +82,7 @@ see http://summernote.org/#/getting-started
 ```
 ## Version history
 
+- `0.0.5` - Test available on meteor pad.
 - `0.0.1` - Initial publish.
 
 ## Contributing
@@ -91,3 +92,5 @@ yes, please.
 ***
 
 [ChromaPDX](http://github.com/ChromaPDX)
+
+![](https://avatars0.githubusercontent.com/u/5441664?v=3&s=90)
