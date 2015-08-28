@@ -76,6 +76,16 @@ To use CFS:S3 and insert direct links (make sure CFS config sets them public on 
 ```bash
 s3bucket: String
 s3subfolder: Optional(String)
+
+s3 link by default calculated as
+baseUrl = "https://" + bucketName + ".s3.amazonaws.com/" + s3subfolder "/" + copies[storeName || imageCollectionName].key
+```
+
+OR provide insert link generator as function
+```
+getS3link: function(fileObj){
+  return "https://" + ?
+}
 ```
 
 ## Summernote Options
